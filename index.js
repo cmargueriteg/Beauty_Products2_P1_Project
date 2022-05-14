@@ -47,4 +47,26 @@ document.addEventListener('DOMContentLoaded', () => {
    </div>
   `
      }
- 
+
+     //function to toggle between dark and light modes
+     function toggleMode(){
+      
+      let element = document.body;
+
+      element.classList.toggle("light-mode");   
+
+      
+     
+    };
+
+   
+    
+    // Get the buttons in the DOM
+    const toggleButtons = document.querySelectorAll(".color-mode__btn");
+    
+    //event listeners
+    toggleButtons.forEach(btn => {
+        btn.addEventListener("click", toggleMode);
+    });
+
+    
