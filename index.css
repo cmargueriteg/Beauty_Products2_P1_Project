@@ -6,13 +6,15 @@ body {
 }
 
 .introhead {
-  font-size: 80px;
-  bottom: 100px;
+  font-size: 90px;
+  bottom: 80%;
   background: rgb(106, 129, 116); 
-  padding: 20px;
+  padding: 6px;
   word-spacing: 8px;
   text-align: center;
   height: 100px;
+  position: relative;
+  left: 10%;;
   
     
 }
@@ -95,3 +97,21 @@ li a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
+
+.img{
+ 
+  height: 400px; /* need to define height and width explicitly (to my understanding) */
+	width: 400px;
+  position: relative;
+  left: 45%;
+  border-radius: 50%;
+	background-size: cover; /* cover or contain */
+	background-image: url('https://www.makeup.com/-/media/project/loreal/brand-sites/mdc/americas/us/articles/2021/december/17-pantone-very-peri-manicure-inspiration/pantone-nail-inspo-hero-mudc-121721.jpg?w=705&h=529&blr=False&hash=69FDAB26B6F582042325713B208B6777'); /* load image */
+	background-repeat: no-repeat; /* dont tile */
+	background-position: center; /* center image | top, bottom, left, right, custom are also valid options */
+
+	border: 1px solid black; 
+  
+  
+}
+
