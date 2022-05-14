@@ -136,3 +136,33 @@ li a:hover:not(.active) {
   --cardback: darkslategrey;
   --ulback: #f1f1f1;
 }
+
+/* Any element with the class "light--hidden" will be hidden when the site is set to Light Mode */
+:root[color-mode="light"] .light--hidden {
+  display: none;
+}
+
+/* Any element with the class "dark--hidden" will be hidden when the site is set to Dark Mode */
+:root[color-mode="dark"] .dark--hidden {
+  display: none;
+}
+
+.color-mode__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0 auto 1.5rem;
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #111111;
+  color: var(--element1, #111111);
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--box-shadow);
+  margin-left: 95%;
+}
