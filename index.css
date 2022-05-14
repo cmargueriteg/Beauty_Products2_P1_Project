@@ -120,16 +120,12 @@ li a:hover:not(.active) {
 
 /* Light Mode */
 :root[color-mode="light"] {
-  --surface1: #e6e6e6;
-  --surface2: #f2f2f2;
-  --surface3: #ffffff;
-  --element1: #111111;
-  --element2: #222222;
-  --element3: #333333;
-  --elementInverse: #eee;
-  --primary: #01408e;
-  --secondary: #3c5d5c;
-  --tertiary: #fff7d6;
+  --bodyback: #eae3e3;
+  --introback: #eae3e3;
+  --descripback: ##eae3e3;
+  --cardback: #eae3e3;
+  --ulback: #eae3e3;
+  
 }
 
 /* Dark Mode */
