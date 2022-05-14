@@ -71,7 +71,7 @@ ul {
   width: 25%;
   background-color: #f1f1f1;
   height: 100%; 
-  position: fixed; /* Make it stick, even on scroll */
+  position: fixed; 
   bottom: 50px;
   top:50px;
   border: 1px solid #555;
@@ -100,18 +100,43 @@ li a:hover:not(.active) {
 
 .img{
  
-  height: 400px; /* need to define height and width explicitly (to my understanding) */
+  height: 400px; 
 	width: 400px;
   position: relative;
   left: 45%;
   border-radius: 50%;
-	background-size: cover; /* cover or contain */
+	background-size: cover; 
 	background-image: url('https://www.makeup.com/-/media/project/loreal/brand-sites/mdc/americas/us/articles/2021/december/17-pantone-very-peri-manicure-inspiration/pantone-nail-inspo-hero-mudc-121721.jpg?w=705&h=529&blr=False&hash=69FDAB26B6F582042325713B208B6777'); /* load image */
 	background-repeat: no-repeat; /* dont tile */
-	background-position: center; /* center image | top, bottom, left, right, custom are also valid options */
+	background-position: center; 
 
 	border: 1px solid black; 
   
   
 }
 
+
+/* Define dark and light palettes with CSS variables */
+
+/* Light Mode */
+:root[color-mode="light"] {
+  --surface1: #e6e6e6;
+  --surface2: #f2f2f2;
+  --surface3: #ffffff;
+  --element1: #111111;
+  --element2: #222222;
+  --element3: #333333;
+  --elementInverse: #eee;
+  --primary: #01408e;
+  --secondary: #3c5d5c;
+  --tertiary: #fff7d6;
+}
+
+/* Dark Mode */
+:root[color-mode="dark"] {
+  --bodyback: rgb(106, 129, 116);
+  --introback:  rgb(106, 129, 116); 
+  --descripback:  rgb(106, 129, 116); 
+  --cardback: darkslategrey;
+  --ulback: #f1f1f1;
+}
