@@ -53,9 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       let element = document.body;
 
-      element.classList.toggle("light-mode");   
-
-      
+      element.classList.toggle("light-mode"); 
      
     };
 

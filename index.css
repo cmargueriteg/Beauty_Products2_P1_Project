@@ -1,9 +1,15 @@
 body { 
-    background-color: rgb(106, 129, 116);
+     background-color: rgb(106, 129, 116); 
     margin: 0px;
-    
+      }
 
-}
+      .light-mode {
+        background-color: #b5b1b1;
+        
+      }
+
+     
+
 
 .introhead {
   font-size: 90px;
@@ -116,36 +122,16 @@ li a:hover:not(.active) {
 }
 
 
-/* Define dark and light palettes with CSS variables */
-
-/* Light Mode */
-:root[color-mode="light"] {
-  --bodyback: #eae3e3;
-  --introback: #eae3e3;
-  --descripback: ##eae3e3;
-  --cardback: #eae3e3;
-  --ulback: #eae3e3;
-  
-}
-
-/* Dark Mode */
-:root[color-mode="dark"] {
-  --bodyback: rgb(106, 129, 116);
-  --introback:  rgb(106, 129, 116); 
-  --descripback:  rgb(106, 129, 116); 
-  --cardback: darkslategrey;
-  --ulback: #f1f1f1;
-}
 
 /* Any element with the class "light--hidden" will be hidden when the site is set to Light Mode */
-:root[color-mode="light"] .light--hidden {
+ .light--hidden {
   display: none;
-}
+} 
 
 /* Any element with the class "dark--hidden" will be hidden when the site is set to Dark Mode */
-:root[color-mode="dark"] .dark--hidden {
+ .dark--hidden {
   display: none;
-}
+} 
 
 .color-mode__btn {
   display: flex;
@@ -166,3 +152,23 @@ li a:hover:not(.active) {
   box-shadow: var(--box-shadow);
   margin-left: 95%;
 }
+
+.color-mode__btn svg {
+  width: 80px;
+  height: 80px;
+  margin-left: 7px;
+  fill: none;
+  stroke: #222222;
+  stroke: var(--element2, #222222);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5px;
+}
+
+.color-mode__btn:hover svg,
+.color-mode__btn:focus svg, .color-mode__btn:focus {
+  outline: none;
+  fill: #fff7d6;
+  fill: var(--tertiary, #fff7d6);
+}
+
